@@ -4,7 +4,7 @@ namespace Bkremenovic\Barcode;
 
 class BarcodeGeneratorHTML extends BarcodeGenerator
 {
-    public function getBarcode($code, $type = BarcodeGenerator::TYPE_CODE_128, $heightFactor = 2, $totalWidth = 30, $color = 'black')
+    public function getBarcode($code, $type = BarcodeGenerator::TYPE_CODE_128, $heightFactor = 1.5, $totalWidth = 50, $color = 'black')
     {
         $barcodeData = $this->getBarcodeData($code, $type);
 
